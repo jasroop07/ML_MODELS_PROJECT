@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: black; /* Ensures the entire page background is black */
+    color: white;
+}
+
+.Main {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    background-color: black; /* Black background for the main container */
+}
+
+/* Left Content (Text) */
+.left-content {
+    width: 50%; /* Takes left half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    padding-left: 4%;
+}
+
+.left-content h3 {
+    margin-bottom: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-content h1 {
+    font-size: 4rem;
+}
+
+.left-content p {
+    width: 80%;
+    padding-top: 1rem;
+}
+
+/* Right Content (Image) */
+.right-content {
+    width: 50%; /* Takes right half */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.right-content img {
+    max-width: 90%; /* Ensures the image fits well */
+    max-height: 90%; /* Prevents image from overflowing */
+    object-fit: contain; /* Keeps aspect ratio intact */
+}
