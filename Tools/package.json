@@ -2,13 +2,14 @@
   "name": "tools",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://jasroop07.github.io/ML_MODELS_PROJECT",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.0.13",
     "axios": "^1.8.3",
